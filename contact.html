@@ -6,9 +6,7 @@
         <meta name="description" content="Get real jackets">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/styles.css" rel="stylesheet">
-        <link href="css/index.css" rel="stylesheet">
-        <link href="css/news.css" rel="stylesheet">
-        <link href="css/about.css" rel="stylesheet">
+        <link href="css/news.css" rel="stylesheet">  
         <link href="css/contact.css" rel="stylesheet">
         <link href="css/media.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/96bb08a331.js" crossorigin="anonymous"></script>
@@ -22,7 +20,6 @@
                 </div>
                 <div class="item-logo">
                     <a href="index.html"><img src="img/Logo.png"></a>
-            
                 </div>
                 <div class="item-icons">
                     <a href="contact.html"><i class="fas fa-portrait"></i></a>
@@ -33,7 +30,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="current"> Home </a></li>
+                    <li><a href="index.html"> Home </a></li>
                     <li><a href="news.html"> News </a></li>
                     <li><a href="men.html"> Men </a></li>
                     <li><a> Women </a></li>
@@ -41,49 +38,60 @@
                     <li><a> Sale </a></li>
                 </ul>
             </nav>
-        </header>
-        <section class="welcome">
-            <div class="position-welcome">
-                <h1> Unique Jackets</h1>
+            <div class=nav-secondary>
                 <ul>
-                    <li> Designed for a range of different outdoor activities</li>
-                    <li> Suitable for a range of different weather types</li>
-                    <li> Comfortable whatever adventure they go on</li>
-                    <li> Emphasize durability</li>
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="men.html"> > Contact us </a></li>
                 </ul>
-                <a href="news.html" class="cta"> View New Jackets</a>
             </div>
-            
-        </section>
+        </header>
+
         <main>
-            <section class="featured">
-                <h2> New Jackets</h2>
-                <div class="products">
-                    <img src="img/jacket8.jpg" alt="Jacket">
-                    <h3>Gant</h3>
-                    <p>$500</p>
-                    <a class="cta-product" href="product.html">View</a>
+            <div class="contact">
+                <h1> Contact Us </h1>
+                <div class="contact-info">
+                    <ul>
+                        <li> Rainydays@outlook.com</li>
+                        <li> Chat | Monday - Friday 11:00 - 20:00</li>
+                        <li> Adress | Storgata, 0633 Oslo</li>
+                        <li> Tlf: 6988 6532</li>
+                    </ul>
                 </div>
-                <div class="products">
-                    <img src="img/jacket8.jpg" alt="Jacket">
-                    <h3>Gant</h3>
-                    <p>$500</p>
-                    <a class="cta-product" href="product.html">View</a>
+                <div class="contact">
+                    <h3> Send us a message!</h3>
+                    <form method="post" action="#" class="contact-form">
+                        <div class="contact-form-1">
+                            <label for="name">Name</label>   
+                        </div>
+                        <div class="contact-form-2">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>   
+                        </div>
+                        
+                    </form>
+
+                    <form method="post" action="#" class="contact-form">
+                        <div class="contact-form-1">
+                            <label for="email">Email</label>   
+                        </div>
+                        <div class="contact-form-2">
+                            <input type="email" name="email" id="email" placeholder="Your email" required> 
+                        </div>
+                    </form>
+
+                    <div class="contact-form">
+                        <div class="contact-form-1">
+                            <label for="message"> Message </label>
+                        </div>
+                        <div class="contact-form-2">
+                            <textarea id="message" name="message" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    <a href="news.html" class="cta-send"> Send message</a>
                 </div>
-                <div class="products">
-                    <img src="img/jacket8.jpg" alt="Jacket">
-                    <h3>Gant</h3>
-                    <p>$500</p>
-                    <a class="cta-product" href="product.html">View</a>
-                </div>
-                <div class="products">
-                    <img src="img/jacket8.jpg" alt="Jacket">
-                    <h3>Gant</h3>
-                    <p>$500</p>
-                    <a class="cta-product" href="product.html">View</a>
-                </div>
-            </section>
+
+            </div>
         </main>
+            
         <footer>
             <section class="footer">
                 <div class="footer-flex">
@@ -106,8 +114,3 @@
         </footer>
     </body>
 </html>
-
-<!--
-    <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-    <input type="checkbox" id="hamburger-menu"/>
--->

@@ -5,8 +5,9 @@
         <meta charset="UTF-8" />
         <meta name="description" content="Get real jackets">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/queries.css" rel="stylesheet" type="text/css">
         <link href="css/styles.css" rel="stylesheet">
+        <link href="css/news.css" rel="stylesheet">
+        <link href="css/media.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/96bb08a331.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -20,50 +21,66 @@
                     <img src="img/Logo.png"> 
                 </div>
                 <div class="item-icons">
-                    <i class="fas fa-portrait"></i>
-                    <i class="fas fa-info"></i>
+                    <a href="contact.html"><i class="fas fa-portrait"></i></a>
+                    <a href="about.html"><i class="fas fa-info"></i></a>
                     <i class="fas fa-heart"></i>
-                    <i class="fas fa-shopping-cart"></i>
+                    <a href="shoppingcart.html"><i class="fas fa-shopping-cart"></i></a>
                 </div>
             </div>
-            <nav>
+            <nav class="nav-main">
                 <ul>
                     <li><a href="index.html"> Home </a></li>
-                    <li><a class="current"> News </a></li>
-                    <li><a> Men </a></li>
+                    <li><a href="news.html" class="current"> News </a></li>
+                    <li><a href="men.html"> Men </a></li>
                     <li><a> Women </a></li>
                     <li><a> Kids </a></li>
                     <li><a> Sale </a></li>
                 </ul>
             </nav>
+            <div class=nav-secondary>
+                <ul>
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="news.html"> > New Jackets </a></li>
+                </ul>
+            </div>
         </header>
 
         <main>
+            <section class="category">
+                <ul>
+                    <li>Category</li>
+                    <li>Colors</li>
+                    <li>Clothing Brand</li>
+                    <li>Size</li>
+                    <li>Sort by price</li>
+                </ul>
+            </section>
+
             <section class="featured">
                 <h2> New Jackets</h2>
                 <div class="products">
                     <img src="img/jacket8.jpg" alt="Jacket">
                     <h3>Gant</h3>
                     <p>$500</p>
-                    <a class="cta-product" href="index.html">View</a>
+                    <a class="cta-product" href="product.html">View</a>
                 </div>
                 <div class="products">
                     <img src="img/jacket8.jpg" alt="Jacket">
                     <h3>Gant</h3>
                     <p>$500</p>
-                    <a class="cta-product" href="index.html">View</a>
+                    <a class="cta-product" href="product.html">View</a>
                 </div>
                 <div class="products">
                     <img src="img/jacket8.jpg" alt="Jacket">
                     <h3>Gant</h3>
                     <p>$500</p>
-                    <a class="cta-product" href="index.html">View</a>
+                    <a class="cta-product" href="product.html">View</a>
                 </div>
                 <div class="products">
                     <img src="img/jacket8.jpg" alt="Jacket">
                     <h3>Gant</h3>
                     <p>$500</p>
-                    <a class="cta-product" href="index.html">View</a>
+                    <a class="cta-product" href="product.html">View</a>
                 </div>
             </section>
         </main>
@@ -71,8 +88,8 @@
             <section class="footer">
                 <div class="footer-flex">
                     <ul class="footer-nav">
-                        <li><a href="#"> About us</a></li>
-                        <li><a href="#"> Contact us</a></li>
+                        <li><a href="about.html"> About us</a></li>
+                        <li><a href="contact.html"> Contact us</a></li>
                         <li><a href="#"> iOS App</a></li>
                         <li><a href="#"> Andriod App</a></li>
                     </ul>

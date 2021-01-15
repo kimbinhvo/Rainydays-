@@ -6,10 +6,8 @@
         <meta name="description" content="Get real jackets">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/styles.css" rel="stylesheet">
-        <link href="css/index.css" rel="stylesheet">
         <link href="css/news.css" rel="stylesheet">
-        <link href="css/about.css" rel="stylesheet">
-        <link href="css/contact.css" rel="stylesheet">
+        <link href="css/shoppingcart.css" rel="stylesheet">
         <link href="css/media.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/96bb08a331.js" crossorigin="anonymous"></script>
     </head>
@@ -41,47 +39,61 @@
                     <li><a> Sale </a></li>
                 </ul>
             </nav>
-        </header>
-        <section class="welcome">
-            <div class="position-welcome">
-                <h1> Unique Jackets</h1>
+            <div class=nav-secondary>
                 <ul>
-                    <li> Designed for a range of different outdoor activities</li>
-                    <li> Suitable for a range of different weather types</li>
-                    <li> Comfortable whatever adventure they go on</li>
-                    <li> Emphasize durability</li>
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="news.html"> > New Jackets </a></li>
+                    <li><a href="product.html"> > Product </a></li>
+                    <li><a href="shoppingcart.html"> > Shopping Cart </a></li>
                 </ul>
-                <a href="news.html" class="cta"> View New Jackets</a>
             </div>
-            
-        </section>
+        </header>
         <main>
-            <section class="featured">
-                <h2> New Jackets</h2>
-                <div class="products">
-                    <img src="img/jacket8.jpg" alt="Jacket">
-                    <h3>Gant</h3>
-                    <p>$500</p>
-                    <a class="cta-product" href="product.html">View</a>
+            <section class="shopping-cart">
+                <div class="shopping-cart-product">
+                    <h3> Shopping cart</h3>
+                    <img src="img/jacket6.jpg">
+                    <div class="shopping-cart-product-info">
+                        <h4> Gant</h4>
+                        <p> Jacket Brooklyn Chelsea</p>
+                        <p> Color: <strong class="bold">Black</strong></p>
+                        <p> Size: <strong class="bold">S</strong></p>
+                    </div>
                 </div>
-                <div class="products">
-                    <img src="img/jacket8.jpg" alt="Jacket">
-                    <h3>Gant</h3>
-                    <p>$500</p>
-                    <a class="cta-product" href="product.html">View</a>
+
+                <div class="shopping-cart-total">
+                    <h3> Total</h3>
+                    <div class="shopping-cart-total-left">
+                        <p>Sub total</p>
+                        <p>Shopping</p>
+                        <p class="bold">Total</p>
+                    </div>
+
+                    <div class="shopping-cart-total-right">
+                        <p>499,00 kr</p>
+                        <p>Free</p>
+                        <p class="bold">499,00 kr</p>
+                    </div>
+                    <a class="cta-add-product" href="shoppingcart.html">To checkout</a>
                 </div>
-                <div class="products">
-                    <img src="img/jacket8.jpg" alt="Jacket">
-                    <h3>Gant</h3>
-                    <p>$500</p>
-                    <a class="cta-product" href="product.html">View</a>
+
+                <div class="shopping-cart-delivery">
+                    <h3> Expected delivery time</h3>
+                    <p> Mon, 16.11 - Fri, 20.11</p>
                 </div>
-                <div class="products">
-                    <img src="img/jacket8.jpg" alt="Jacket">
-                    <h3>Gant</h3>
-                    <p>$500</p>
-                    <a class="cta-product" href="product.html">View</a>
+
+                <div class="shopping-cart-discount">
+                    <h3> Discount</h3>
+                    <p> Add discount code</p>
                 </div>
+
+                <div class="shopping-cart-card">
+                    <h3> We accept</h3>
+                    <img src="img/Visa.jpg">
+                    <img src="img/Mastercard.jpg">
+                </div>
+
+
             </section>
         </main>
         <footer>
@@ -106,8 +118,3 @@
         </footer>
     </body>
 </html>
-
-<!--
-    <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-    <input type="checkbox" id="hamburger-menu"/>
--->

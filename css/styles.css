@@ -20,17 +20,123 @@ html {
 
 h1{
     font-size: 32px;
-    color: white;
+    color:#052441;;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* ----------------------------- */
+/* HEADER */
+/* ----------------------------- */
+
+header {
+    margin: auto;
+    background-color: #ffffff;
+    
+}
+
+.header-container {
+    display: flex;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+input[id=search] {
+    width: 30%;
+    padding: 2px 2px 0px 2px;
+    border-radius: 3px;
+    border: 1px solid#646464;
+    text-align: center;
+}
+
+input[id=search]:hover,
+input[id=search]:active  {
+    border: 1px solid#e67e22
+}
+
+.item-search{
+    flex: 1;
+}
+
+
+.header-container input[id=search] {    
+    margin-top: 30px;
+    margin-left: 30px;
+    padding-bottom: 1px;
+    font-size: 12px;
+}
+
+.item-logo{
+    flex: 2;
+    margin-top: 15px;
+}
+
+.item-logo img {
+    width: 35%;
+}
+
+.item-icons{
+    flex: 1;
+    margin-right: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* ----------------------------- */
+/* NAVIGATION */
+/* ----------------------------- */
+
+nav {
+    margin: -10px 35px 15px 35px;
+    text-align: center;
+    background-color: #70846c;
+    padding: 3px 0px;
+    
+}
+nav li {
+    display: block;
+    margin: 10px 10px;
+    padding: 0px 30px;
+    color: rgb(0, 0, 0);
+    font-size: 80%;
+}
+
+nav a:hover,
+nav a:active {
+    color: white; 
+    text-decoration: 3px underline rgb(255, 255, 255);
+}
+
+nav a {
+    color: rgb(0, 0, 0); 
+    text-decoration: none;
+}
+
+
+.current {
+    text-decoration: solid 3px underline #000000;
+    color:#000000;
 }
 
 /* ----------------------------- */
 /* BUTTONS */
 /* ----------------------------- */
-
 
 .cta {
     background-color:#cc7229;
@@ -69,7 +175,6 @@ p {
     
 }
 
-
 /* ----------------------------- */
 /* ICONS */
 /* ----------------------------- */
@@ -98,162 +203,7 @@ p {
     margin: 30px 3px 0 0px;
     
 }
-/* ----------------------------- */
-/* HEADER */
-/* ----------------------------- */
 
-header {
-    margin: auto;
-    background-color: #ffffff;
-    
-}
-
-.header-container {
-    display: flex;
-    margin: auto;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-input[type=text] {
-    width: 30%;
-    padding: 2px 2px 0px 2px;
-    border-radius: 3px;
-    border: 1px solid#646464;
-    text-align: center;
-}
-
-input[type=text]:hover,
-input[type=text]:active  {
-    border: 1px solid#e67e22
-}
-
-.item-search{
-    flex: 1;
-}
-
-
-.header-container input[type=text] {    
-    margin-top: 30px;
-    margin-left: 30px;
-    padding-bottom: 1px;
-    font-size: 12px;
-}
-
-.item-logo{
-    flex: 2;
-    margin-top: 15px;
-}
-
-.item-logo img {
-    width: 35%;
-}
-
-.item-icons{
-    flex: 1;
-    margin-right: 15px;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-/* ----------------------------- */
-/* NAVIGATION */
-/* ----------------------------- */
-
-nav {
-    margin: -10px 35px 15px 35px;
-    text-align: center;
-    background-color: #70846c;
-    
-}
-nav li {
-    display: block;
-    margin: 10px 10px;
-    padding: 0px 30px;
-    color: rgb(0, 0, 0);
-    font-size: 80%;
-}
-
-nav a:hover,
-nav a:active {
-    color: white; 
-    text-decoration: 3px underline rgb(255, 255, 255);
-}
-
-nav a {
-    color: rgb(0, 0, 0); 
-    text-decoration: none;
-}
-
-.current {
-    text-decoration: solid 3px underline #000000;
-    color:#000000;
-}
-
-.welcome{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(34, 34, 34, 0.7)), url("../img/header.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 45vh; 
-    position: relative;
-}
-
-.position-welcome {
-    position: absolute;
-    left: 125px;
-    top: 45px;
-    text-align: center; 
-}
-
-.position-welcome h1 {
-    font-size: 32px;
-    color: white;
-    margin-right: 45px;
-    margin-bottom: 15px;
-    
-}
-
-.position-welcome ul {
-    margin-bottom: 20px;
-}
-
-
-.position-welcome li {
-    font-size: 12px;
-    color: white;
-    margin-bottom: 2px;
-    list-style: none;
-    text-align: left;
-}
-
-/* ----------------------------- */
-/* MAIN */
-/* OUR JACKETS */
-/* ----------------------------- */
-
-/*
-.our-jackets {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    margin: 75px auto;
-    max-width: 900px;
-}
-
-.our-jackets-grid {
-    margin: auto;
-}
-
-.our-jackets-grid h2{
-    text-align: center;
-}
-
-.our-jackets img {
-    border-radius: 10%;
-    width: 35%;
-}
-
-*/
 
 /* ----------------------------- */
 /* FEATURED*/
@@ -261,10 +211,10 @@ nav a {
 
 .featured {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 15px;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px;
     max-width: 400px;
-    margin: 50px auto; 
+    margin: 40px auto; 
 }
 
 .featured h2 {
@@ -325,6 +275,7 @@ footer p {
 .social-links {
     margin: 10px 10px 10px 550px;
     list-style: none;
+    float: right;
 }
 
 .social-links li {
@@ -381,160 +332,7 @@ footer p {
 
 
 
-
-@media only screen and (min-width: 768px) and (max-width: 1023px)  {
-
-    .cta {
-        background-color:#cc7229;
-        color: white;
-        border-radius: 5px;
-        font-size: 16px;
-        text-decoration: none;
-        padding: 5px 40px;
-        text-transform: uppercase;
-    }
-
-    .fa-search {
-        font-size: 170%;
-    }
-
-    input[type=text] {
-        width: 40%;
-    }
-
-    .header-container input[type=text] {    
-        margin-top: 50px;
-        margin-left: 50px;
-        padding-bottom: 0px;
-        font-size: 20px;
-    }
-
-    .item-icons i {
-        font-size: 120%;
-        padding: 0px 5px;
-        margin: 50px 0px 0px 0px;
-        
-    }
-
-    nav li {
-        display: inline-block;
-        padding: 0px 20px;
-        font-size: 90%;
-    }
-
-    .welcome{
-        height: 65vh; 
-    }
-
-    .position-welcome {
-        top: 60px; 
-    }
-
-    .position-welcome h1 {
-        font-size: 40px;
-    }
-
-    .position-welcome ul {
-        margin-bottom: 40px;
-    }
-
-    .position-welcome li {
-        font-size: 16px;
-        margin-left: 20px;
-        margin-bottom: 5px;
-    }
-
-    .featured {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
-        max-width: 600px;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-
-    .cta {
-        background-color:#cc7229;
-        color: white;
-        border-radius: 5px;
-        font-size: 20px;
-        text-decoration: none;
-        padding: 5px 55px;
-        text-transform: uppercase;
-    }
-
-    .fa-search {
-        font-size: 170%;
-    }
-
-    input[type=text] {
-        width: 50%;
-    }
-
-    .header-container input[type=text] {    
-        margin-top: 75px;
-        margin-left: 75px;
-        padding-bottom: 0px;
-        font-size: 20px;
-    }
-
-    .item-icons i {
-        font-size: 140%;
-        padding: 0px 5px;
-        margin: 75px 0px 0px 20px;
-        
-    }
-
-    nav {
-        margin: -10px 50px 15px 50px;
-    }
-    nav li {
-        display: inline-block;
-        font-size: 100%;
-    }
-
-    .welcome{
-        height: 90vh; 
-    }
-
-    .position-welcome {
-        top: 75px; 
-    }
-
-    .position-welcome h1 {
-        font-size: 48px;
-    }
-
-    .position-welcome ul {
-        margin-right: 40px;
-        margin-bottom: 40px;
-    }
-
-    .position-welcome li {
-        font-size: 20px;
-        margin-left: 100px;
-        margin-bottom: 5px;
-    }
-
-    .featured {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 30px;
-        max-width: 900px;
-    }
-
-    footer {
-        background-color: #333;
-        min-height: 150px;
-        margin-top: 50px;
-        display: inline-block;
-    }
-}
-
-
-
-
+/* 1.The footer to be scaleable.*/
 
 
 
