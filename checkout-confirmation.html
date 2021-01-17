@@ -1,63 +1,81 @@
 <!doctype html> 
 <html>
     <head>
-        <title> Rainydays | Shopping cart</title>
+        <title> Rainydays | Checkout confirmation</title>
         <meta charset="UTF-8" />
-        <meta name="description" content="Shopping cart">
+        <meta name="description" content="Checkout confirmation">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/styles.css" rel="stylesheet">
-        <link href="css/news.css" rel="stylesheet">
         <link href="css/shoppingcart.css" rel="stylesheet">
+        <link href="css/checkout-log-in.css" rel="stylesheet">
+        <link href="css/checkout-payment.css" rel="stylesheet">
+        <link href="css/checkout-confirmation.css" rel="stylesheet">
         <link href="css/media.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/96bb08a331.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <div class="header-container">
-                <div class="item-search">
-                    <input type="text" name="search" id="search" placeholder="Search">
-                    <button type="submit"><i class="fas fa-search"></i></button>
+            <div class="header-checkout">
+                <div class="item-arrow-left">
+                    <a href="checkout-payment.html"><i class="fas fa-arrow-left"></i></a>
                 </div>
                 <div class="item-logo">
                     <a href="index.html"><img src="img/Logo.png"></a>
-            
                 </div>
-                <div class="item-icons">
-                    <a href="contact.html"><i class="fas fa-portrait"></i></a>
-                    <a href="about.html"><i class="fas fa-info"></i></a>
-                    <i class="fas fa-heart"></i>
-                    <a href="shoppingcart.html"><i class="fas fa-shopping-cart"></i></a>
+                <div class="item-arrow-right">
+                    <a href="checkout-complete.html"><i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-            <nav>
+
+            <div class="header-checkout-line"></div>
+
+            <div class="header-checkout-number">
                 <ul>
-                    <li><a href="index.html" class="current"> Home </a></li>
-                    <li><a href="news.html"> News </a></li>
-                    <li><a href="men.html"> Men </a></li>
-                    <li><a> Women </a></li>
-                    <li><a> Kids </a></li>
-                    <li><a> Sale </a></li>
-                </ul>
-            </nav>
-            <div class=nav-secondary>
-                <ul>
-                    <li><a href="index.html"> Home </a></li>
-                    <li><a href="news.html"> > New Jackets </a></li>
-                    <li><a href="product.html"> > Product </a></li>
-                    <li><a href="shoppingcart.html"> > Shopping Cart </a></li>
+                    <div class="header-checkout-text">
+                        <a href="checkout-log-in.html">
+                            <li>1</li>
+                            <p>Log in</p>
+                        </a>
+                    </div>
+                    <div class="header-checkout-text">
+                        <a href="checkout-address.html">
+                            <li>2</li>
+                            <p>Address</p>
+                        </a>
+                    </div>
+                    <div class="header-checkout-text">
+                        <a href="checkout-payment.html">
+                            <li>3</li>
+                            <p>Payment</p>
+                        </a>
+                    </div>
+                    <div class="header-checkout-text">
+                        <a href="checkout-confirmation.html">
+                            <li class="current">4</li>
+                            <p>Confirmation</p>
+                        </a>
+                    </div>
+                    <div class="header-checkout-text">
+                        <a href="checkout-complete.html">
+                            <li>5</li>
+                            <p>Complete</p>
+                        </a>
+                    </div>
                 </ul>
             </div>
         </header>
-        <main>
+        <main class="confirmation">
+            <h1> Confirmation</h1>
             <section class="shopping-cart">
                 <div class="shopping-cart-product">
-                    <h3> Shopping cart</h3>
+                    <h3> Order</h3>
                     <img src="img/jacket6.jpg">
                     <div class="shopping-cart-product-info">
                         <h4> Gant</h4>
                         <p> Jacket Brooklyn Chelsea</p>
                         <p> Color: <strong class="bold">Black</strong></p>
                         <p> Size: <strong class="bold">S</strong></p>
+                        <p> <strong class="bold">499,99 kr</strong></p>
                     </div>
                 </div>
 
@@ -74,7 +92,7 @@
                         <p>Free</p>
                         <p class="bold">499,00 kr</p>
                     </div>
-                    <a class="cta-to-checkout" href="checkout-log-in.html">To checkout</a>
+                    <a class="cta-to-checkout" href="checkout-complete.html">Send order</a>
                 </div>
 
                 <div class="shopping-cart-delivery">
@@ -83,16 +101,20 @@
                 </div>
 
                 <div class="shopping-cart-discount">
-                    <h3> Discount</h3>
-                    <p> Add discount code</p>
+                    <h3> Delivery address</h3>
+                    <p> Storgata 12</p>
+                    <p> 0655 Oslo, Norway</p>
                 </div>
 
                 <div class="shopping-cart-card">
-                    <h3> We accept</h3>
-                    <img src="img/Visa.jpg">
-                    <img src="img/Mastercard.jpg">
+                    <h3> Payment method</h3>
+                    <div class="payment-method-flex">
+                        <img src="img/Visa.jpg">  
+                        <p>**** **** 3456</p>
+                    </div>
                 </div>
             </section>
+           
         </main>
         <footer>
             <section class="footer">

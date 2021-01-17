@@ -3,11 +3,12 @@
 /* ----------------------------- */
 
 .nav-secondary {
-    margin-left: 50px;
+    margin-left: 35px;
 }
 
 .nav-secondary li{
-    display: none;
+    display: inline-block;
+    font-size: 70%;
 }
 
 .nav-secondary a{

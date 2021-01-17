@@ -40,6 +40,28 @@
         font-size: 90%;
     }
 
+    /* FOOTER */
+
+    footer {
+        min-height: 150px;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 20px;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 10px;
+    }
+
+    .social-links li {
+       margin-right: 15px;
+    }
+
 
     .welcome{
         height: 65vh; 
@@ -124,6 +146,12 @@
         max-width: 800px;
     }
 
+    .product-img {
+        display: flex;
+        min-width: 375x;
+        margin-left: 40px;
+    }
+
     .product-info p{
         margin-top: 10px;
     }
@@ -138,13 +166,58 @@
 
     /* SHOPPING CART*/
 
-    .cta-add-product {
+    .cta-to-checkout {
         min-width: 645px;
     }
 
     .shopping-cart-total-right{
         margin-left: 520px;
     }
+
+    /* CHECK OUT LOG IN */
+
+    .cta-log-in {
+        padding: 5px 135px;
+    }
+
+    .log-in-cta{
+        margin-top: 20px;
+        margin-right: 25px;
+    }
+    
+    
+    .cta-register {
+        padding: 5px 120px;   
+    }
+
+    .header-checkout {
+        width: 70%;
+    }
+    
+    .header-checkout-number li {
+        margin: 5px 50px;
+    }
+
+    /* CHECK OUT ADDRESS / CHECK OUT PAYMENT*/
+    .cta-add {
+        padding: 10px 115px;
+    }
+    
+    .cta-continue { 
+        padding: 10px 130px;   
+    }
+    
+    .delivery-address,
+    .payment-method {
+        margin: 30px 50px;
+    }
+
+    .payment-method-flex p {
+        margin-top: 20px;
+        font-size: 110%;
+    }
+
+
 }
 
 /* Designed the page with 1280px*/
@@ -182,6 +255,8 @@
         
     }
 
+    /* NAVIGATION */
+
     nav {
         margin: -10px 50px 15px 50px;
     }
@@ -190,10 +265,41 @@
         font-size: 100%;
     }
 
+    /* NAV SECONDARY */ 
+
+    .nav-secondary {
+        margin-left: 50px;
+    }
+
     .nav-secondary li{
         display: inline-block;
         font-size: 80%;
     }
+
+     /* FOOTER */
+
+     footer {
+        min-height: 150px;
+    }
+
+     .footer-nav {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 40px;
+    }
+
+    .footer-nav li {
+        margin-right: 20px;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-links li {
+        margin-right: 30px;
+     }
 
     .welcome{
         height: 90vh; 
@@ -307,16 +413,9 @@
         margin-top: 15px;
     }
 
-    footer {
-        background-color: #333;
-        min-height: 150px;
-        margin-top: 50px;
-        display: inline-block;
-    }
-
      /* SHOPPING CART*/
 
-     .cta-add-product {
+     .cta-to-checkout {
         max-height:25px;
         padding: 5px 15px;
     }
@@ -332,4 +431,75 @@
         margin: 10px 50px;
      }
 
+      /* CHECK OUT LOG IN */
+
+    .cta-log-in {
+        padding: 10px 195px;
+    }
+
+    .log-in-cta{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    .cta-register {
+        padding: 10px 190px;   
+    }
+
+    .register-cta {
+        margin-top: 40px;
+    }
+
+    .header-checkout {
+        width: 56%;
+    }
+    
+    .header-checkout-number li {
+        margin: 5px 80px;
+    }
+
+    .log-in-grid p{
+        font-size: 60%;
+        margin-top: 15px;
+    }
+
+    input[id=password],
+    input[id=email-log-in] {
+        width: 80%;
+        padding: 10px 10px;
+        margin-left: 50px;
+    }
+
+    /* CHECK OUT ADDRESS / CHECK OUT PAYMENT*/
+
+    .cta-add {
+        padding: 10px 170px;
+    }
+    
+    .cta-continue { 
+        padding: 10px 190px;   
+    }
+    
+    .delivery-address,
+    .payment-method {
+        margin: 30px 70px;
+    }
+
+    .payment-method-flex p {
+        margin-top: 25px;
+        font-size: 120%;
+    }
+
+    /* COMPLETE*/
+
+    .complete-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .complete-box {
+        margin: 20px;
+    }
+
 }
+
+
