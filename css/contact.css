@@ -37,7 +37,8 @@
 
 .contact-form {
     display: grid;
-    grid-template-areas: 'contact-form-1 contact-form-2 contact-form-2';
+    grid-template-areas: 'contact-form-1 contact-form-2'
+                         'form-error'; 
     grid-gap: 10px;
     margin: 50px auto 10px; 
 }
@@ -47,6 +48,7 @@
 }
 
 input[id=name],
+input[id=number],
 input[id=email] {
     width: 40%;
     padding: 5px 50px;
@@ -56,8 +58,34 @@ input[id=email] {
 }
 
 textarea {
-    width: 75%;
+    width: 60%;
     height: 100px;
     padding: 10px;
-    margin-right: 20px;
 }
+
+.form-error {
+    display: none;
+    color: red;
+    font-size: 90%;
+    margin-top: 1px;
+}
+
+.success {
+    background: green;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    margin:20px;
+    font-size: 80%;
+}
+
+.fail {
+    background: red;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    margin:20px;
+    font-size: 80%;
+}
+
+

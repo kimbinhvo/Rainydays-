@@ -129,18 +129,23 @@
     }
 
     input[id=name],
+    input[id=number],
     input[id=email] {
         width: 60%;
         padding: 7px 50px;
     }
 
     textarea {
-        width:85%;
+        width:73%;
     }
 
 
     /* PRODUCT */ 
 
+    .cta-add-product {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
     .product-main {
         flex-direction: row;
         max-width: 800px;
@@ -151,6 +156,7 @@
         min-width: 375x;
         margin-left: 40px;
     }
+    
 
     .product-info p{
         margin-top: 10px;
@@ -376,14 +382,15 @@
     }
 
     input[id=name],
+    input[id=number],
     input[id=email] {
         width: 80%;
         padding: 10px 50px;
     }
 
     textarea {
-        width: 93%;
-        margin-right: 90px;
+        width: 89%;
+      
     }
 
     /* PRODUCT */ 
@@ -396,6 +403,8 @@
     .cta-add-product {
         font-size: 20px;
         padding: 3px 30px;
+        margin-top: 15px;
+        margin-left: 0px;
     }
     .product-main {
         flex-direction: row;
